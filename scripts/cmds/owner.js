@@ -32,17 +32,17 @@ module.exports = {
 ╰────────────────╯`;
 
     const cacheDir = path.join(__dirname, "cache");
-    const imgPath = path.join(cacheDir, "owner.jpg");
+    const imgPath = path.join(cacheDir, "");
 
     if (!fs.existsSync(cacheDir)) fs.mkdirSync(cacheDir);
 
-    const imgLink = "https://i.imgur.com/1G4ZhU7.jpeg";
+    const imgLink = "";
 
     const send = () => {
       api.sendMessage(
         {
           body: ownerText,
-          attachment: fs.createReadStream(imgPath)
+          attachment: fs.createReadStream(imPath)
         },
         event.threadID,
         () => fs.unlinkSync(imgPath),
