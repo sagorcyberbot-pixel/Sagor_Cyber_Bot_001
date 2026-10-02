@@ -86,8 +86,6 @@
         "domain": "facebook.com",
         "path": "/",
         "hostOnly": false,
-        "creation": "2026-10-02T12:01:07.003Z",
+        
         "lastAccessed": "2026-10-02T12:01:07.003Z"
     },
-    {
-        "key": "fr",
